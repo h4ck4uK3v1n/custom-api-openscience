@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "build": "tsc",
-    "dev": "yarn build && nodemon -e js -w dist ./dist/main.js",
+    "dev": "nodemon -e js -w dist ./dist/main.js",
     "db:start:local": "docker-compose -f ./database/dev-database.yml up -d",
     "db:start:local:log": "docker-compose -f ./database/dev-database.yml up",
     "lint": "yarn eslint  src/**/*.{ts,js,tsx}"
