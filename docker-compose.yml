@@ -13,7 +13,7 @@ services:
       - app-network
   app-express:
     container_name: app-express
-    build: .
+    image: ghcr.io/h4ck4uk3v1n/custom-api-openscience:main
     ports:
       - "3000:3000"
     environment:
@@ -33,4 +33,4 @@ services:
 
 networks:
   app-network:
-    driver: overlay
+    driver: bridge
